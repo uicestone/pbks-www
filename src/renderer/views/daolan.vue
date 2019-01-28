@@ -119,10 +119,6 @@
       p {
         font-size: 3.5vw;
         margin-bottom: 0.5em;
-        text-indent: 2em;
-        img {
-          margin-left: -2em;
-        }
       }
       img {
         width: 100%;
