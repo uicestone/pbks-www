@@ -60,9 +60,9 @@ export default new Router({
       component: require("@/views/fengcai").default
     },
     {
-      path: "/baoming",
-      name: "baoming",
-      component: require("@/views/baoming").default
+      path: "/yuyue",
+      name: "yuyue",
+      component: require("@/views/yuyue").default
     },
     {
       path: "/daolan",

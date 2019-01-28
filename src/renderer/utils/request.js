@@ -95,8 +95,8 @@ export const getEvents = () => {
 
 export const submitAppointment = form => {
   const formData = new FormData();
-  $(form, (key, val) => {
-    formData.append(key, val);
+  Object.keys(form).forEach(key => {
+    formData.append(key, form[key]);
   });
   return request(`appointments`, {
     method: "POST",
