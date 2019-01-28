@@ -43,8 +43,8 @@
     computed: {
       disabledDatesProp() {
         return {
-          to: moment().startOf('day').add(7, 'days').toDate(),
-          from: moment().startOf('day').add(7, 'days').add(3, 'months').toDate()
+          to: moment().startOf('day').add(5, 'days').toDate(),
+          from: moment().startOf('day').add(5, 'days').add(2, 'months').toDate()
         };
       },
       appointmentDate() {
@@ -66,7 +66,7 @@
       <form @submit.prevent="submit()">
         <h2>场馆预约登记表</h2>
         <div class="item">
-          <label>单位名称</label>
+          <label>预约单位</label>
           <input v-model="form['预约单位']" placeholder="单位名称" required/>
         </div>
         <div class="item">
@@ -98,6 +98,11 @@
           <div class="message blue">您已提交成功，正在审核中，工作人员会尽快与您联系。</div>
         </div>
       </form>
+      <div class="hints">
+        <p>温馨提示：</p>
+        <p>1、具体场馆信息可至首页——场馆导览了解详情。</p>
+        <p>2、场馆预约可直接联系开发区职工活动中心， <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系人：范晓龙   联系电话：张宇阳 50138516</p>
+      </div>
     </div>
   </div>
 </template>
@@ -177,11 +182,11 @@
     padding: 6vw;
     .item {
       border: #ddd 1px solid;
-      padding: 3vw;
+      padding: 1vw;
       background: white;
       font-size: 4.5vw;
       margin-bottom: 2.5vw;
-      min-height: 14vw;
+      min-height: 10vw;
     }
     label {
       font-weight: bold;
@@ -209,7 +214,7 @@
     textarea {
       outline: none;
       width: 62%;
-      height: 26vw;
+      height: 20vw;
     }
     .vdp-datepicker {
       display: inline-block;
@@ -224,6 +229,10 @@
         .cell {
           height: 10vw;
           line-height: 10vw;
+          &.selected {
+            background: #51a7dc;
+            color: white;
+          }
         }
       }
     }
@@ -266,6 +275,11 @@
       padding: 1vw 3vw;
       min-height: 10vw;
     }
+  }
+  .hints {
+    padding: 2vw;
+    font-size: 3vw;
+    line-height: 1.8;
   }
   .orange {
     background-color: #e79b32;
