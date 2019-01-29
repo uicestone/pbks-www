@@ -101,7 +101,7 @@
       <div class="hints">
         <p>温馨提示：</p>
         <p>1、具体场馆信息可至首页——场馆导览了解详情。</p>
-        <p>2、场馆预约可直接联系开发区职工活动中心， <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系人：范晓龙   联系电话：张宇阳 50138516</p>
+        <p>2、场馆预约可直接联系开发区职工活动中心， <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系人：范晓龙、张宇阳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;联系电话：50138516</p>
       </div>
     </div>
   </div>
