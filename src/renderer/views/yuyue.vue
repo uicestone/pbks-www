@@ -91,7 +91,7 @@
         </div>
         <div class="item">
           <label>备注</label>
-          <textarea v-model="form['备注']"></textarea> 
+          <textarea v-model="form['备注']" placeholder="输入您对场馆的相关要求，比如设备需求、是否需要制作横幅等……"></textarea> 
         </div>
         <button type="submit" class="btn-block blue">提交</button>
         <div class="modal" v-if="submitModal" @click="back()">
